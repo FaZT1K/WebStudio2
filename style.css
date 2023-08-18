@@ -2,6 +2,9 @@ li{
     text-decoration: none;
     list-style: none;
 }
+ul{
+    margin: 0;
+}
 body{
     font-family: "Roboto";
     font-style: normal;
@@ -35,6 +38,7 @@ text-decoration: none;
 }
 .promo{
     background: #2F303A;
+    padding: 200px 0;
 }
 h1{
     font-weight: 900;
@@ -61,6 +65,10 @@ border-radius: 4px;
 width: 216px;
 height: 50px;
 border: none;
+display: block;
+margin: 0 auto;
+margin-top: 30px;
+
 }
 .footer{
     background: #2F303A;
@@ -96,3 +104,40 @@ border: none;
 height: 260px;
 flex-shrink: 0;
 }
+.header{
+    height: 80px;
+    padding: 25px 0 24px 0;
+}
+.fuatures_list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.fuatures_item{
+    width: 270px;
+}
+.fueatures_item-rectangle{
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA;
+  
+}
+.fueatures_item-rectangle::before{
+    display: block;
+    content: "";
+    background-image: url(./img/antenna.svg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fuatures_item:nth-child(2) .fueatures_item-rectangle::before{ 
+   background-image:url(./img/clock.svg)
+}
+.fuatures_item:nth-child(3) .fueatures_item-rectangle::before{ 
+    background-image:url(./img/diagram.svg)
+ }
+ .fuatures_item:nth-child(4) .fueatures_item-rectangle::before{ 
+    background-image:url(./img/astronaut.svg)
+ }
