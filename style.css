@@ -141,3 +141,4 @@ flex-shrink: 0;
  .fuatures_item:nth-child(4) .fueatures_item-rectangle::before{ 
     background-image:url(./img/astronaut.svg)
  }
+ 
